@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canteen</title>
+    <link rel="stylesheet" href="canteen.css">
+</head>
+<body>
+    <h1>welcome</h1>
+   <h2><label for="">idli-rs.20</label> 
+   <input type="number" name="" id="idli">
+   <label for="">puri-rs.20</label> 
+   <input type="number" name="" id="puri">
+   <label for="">tomatobath-rs.50</label> 
+   <input type="number" name="" id="tomatobath">
+   <label for="">miniuta-rs.60</label> 
+   <input type="number" name="" id="miniuta">
+   <label for="">nkfood-rs.100</label> 
+   <input type="number" name="" id="nkfood">
+   <label for="">maggi-rs.50</label> 
+   <input type="number" name="" id="maggi">
+   <label for="">noodels-rs.50</label> 
+   <input type="number" name="" id="noodels">
+   <button onclick="bill()">submit</button>
+   <p id="res"> total bill is</p></h2>
+   
+   <script>
+        function bill(){
+            var idli=document.getElementById("idli").value;
+            var puri=document.getElementById("puri").value;
+            var tomatobath=document.getElementById("tomatobath").value;
+            var miniuta=document.getElementById("miniuta").value;
+            var  nkfood=document.getElementById("nkfood").value;
+            var maggi=document.getElementById("maggi").value;
+            var noodels=document.getElementById("noodels").value;
+            var total=(idli*20)+(puri*20)+(tomatobath*50)+(miniuta*60)+(nkfood*100)+(maggi*50)+(noodels*50);
+            alert(total);
+        
+        }
+       
+
+    </script>
+
+</body>
+</html>
